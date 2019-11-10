@@ -56,7 +56,7 @@ bool compareFvalue(RouteModel::Node *a, RouteModel::Node *b)
 {
     float f1 = a->g_value + a->h_value;
     float f2 = b->g_value + b->h_value;
-    return (f1 < f2);
+    return (f1 > f2);
 }
 
 RouteModel::Node *RoutePlanner::NextNode()
